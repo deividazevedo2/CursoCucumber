@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		features = "src/test/resources/features/alugar_filme.feature", 
 		glue = "br.com.deivid.steps",
 		//tags = {"@esse",  "@aquele"},
-		plugin = "pretty", 
+		plugin = {"pretty", "html:target/report-html", "json:target/report.json"}, 
 		monochrome = true, 
 		snippets = SnippetType.CAMELCASE, 
 		dryRun = false, 
